@@ -20,3 +20,16 @@ console.log(mp);
   const divideIt = (number) => number / 5;
   console.log(divideIt(25));
 }
+
+// ৩.২ তুমি দুইটা প্যারামিটার ওয়ালা একটা অ্যারো ফাংশন লিখবে। সেই ফাংশনের ভিতরে কাজ হবে। প্রত্যেকটা ইনপুট প্যারামিটার এর সাথে ২ যোগ করবে তারপর যোগফল দুইটা গুণ করবে। ক্যামনে করবে সেটা চিন্তা করে বের করার চেষ্টা করো
+
+{
+  const addMultiply = (num1, num2) => {
+    const add1 = num1 + 2;
+    const add2 = num2 + 2;
+    const multiply = add1 * add2;
+    return multiply;
+  };
+  const result = addMultiply(3, 4);
+  console.log(result);
+}
