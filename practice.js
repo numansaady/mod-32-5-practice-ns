@@ -11,3 +11,12 @@ const person = {
   designation: "Member of Perloumant",
   address: "Chhatak",
 };
+
+const mp = `${fName} ${lName} is a ${person.designation} of ${person.address} area`;
+console.log(mp);
+
+// ৩.১ একটা প্যারামিটার ওয়ালা arrow ফাংশন ডিক্লেয়ার করো। এবং সেই ফাংশনের কাজ হবে তুমি কোন ইনপুট দিলে সেই ইনপুট সংখ্যাকে ৫ দিয়ে ভাগ করে আউটপুট দিবে।
+{
+  const divideIt = (number) => number / 5;
+  console.log(divideIt(25));
+}
