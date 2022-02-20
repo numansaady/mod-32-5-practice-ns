@@ -41,3 +41,16 @@ console.log(mp);
   const output = multiplied(3, 4, 5);
   console.log(output);
 }
+
+// ৩.৪ এইবার দুইটা প্যারামিটার ওয়ালা একটা অ্যারো ফাংশন নিবে। ওই arrow ফাংশনটা হবে অনেকগুলা লাইনের। সেখানে প্রত্যেকটা ইনপুট প্যারামিটার এর সাথে ২ যোগ করবে তারপর যোগফল দুইটা গুণ করবে। ক্যামনে করবে সেটা চিন্তা করে বের করার চেষ্টা করো।
+
+{
+  const addMultiply = (num1, num2) => {
+    const add1 = num1 + 2;
+    const add2 = num2 + 2;
+    const multiply = add1 * add2;
+    return multiply;
+  };
+  const result = addMultiply(3, 4);
+  console.log(result);
+}
