@@ -176,3 +176,16 @@ console.log(mp);
 // .filter() checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria.
 
 // ===========================================================
+// ৮. সিম্পল একটা জাভাস্ক্রিপ্ট অবজেক্ট এর কোন একটা প্রোপার্টিকে ভেরিয়েবল হিসেবে ডিক্লেয়ার করার জন্য destructuring ইউজ করো।
+{
+  const products = {
+    honey: { name: "Honey", weight: "500gm", price: 400 },
+    headphone: { name: "Headphone", weight: "250gm", price: 5000 },
+    lamp: { name: "Table Lamp", weight: "300gm", price: 1000 },
+  };
+  const { honey, lamp } = products;
+  console.log(honey, lamp);
+  const { name, price } = products.headphone;
+  console.log(name, price);
+  console.log(products.headphone.price);
+}
