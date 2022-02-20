@@ -189,3 +189,12 @@ console.log(mp);
   console.log(name, price);
   console.log(products.headphone.price);
 }
+
+// ================================================================
+// ৯. [চ্যালেঞ্জিং] array এর destructuring করবে আর সেটা করার জন্য তুমি এরে এর থার্ড পজিশন এর উপাদান কে destructuring করে 'three' নামক একটা ভেরিয়েবল এ রাখবে।
+{
+  const friends = ["abul", "babul", "sabul", "maruf", "sufian"];
+  const [one, two, three] = [...friends]; //get only elements not array with spread
+  const [one, two, three] = ["abul", "babul", "sabul", "maruf", "sufian"];
+  console.log(three);
+}
