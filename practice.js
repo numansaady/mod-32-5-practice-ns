@@ -162,3 +162,17 @@ console.log(mp);
   const expensive = products.find((product) => product.price === 5000);
   console.log(expensive);
 }
+
+// =====================================================================
+// ৭.৫ [এক্সট্রা] জাভাস্ক্রিপ্ট এ array এর map, forEach, filter, find কোনটা দিয়ে কি হয়। সেটার একটা সামারি লিখে ফেলো।
+
+// 1. forEach()
+// .forEach(), is used to execute the same code on every element in an array but does not change the array and it returns undefined.
+
+// 2. .map():
+// .map() executes the same code on every element in an array and returns a new array with the updated elements.
+
+// 3. .filter():
+// .filter() checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria.
+
+// ===========================================================
