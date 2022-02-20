@@ -150,3 +150,15 @@ console.log(mp);
   const oddNumbers = numbers.filter((number) => number % 2 === 1);
   console.log(oddNumbers);
 }
+
+// ৭. একটা array এর মধ্যে অনেকগুলা অবজেক্ট আছে। সেখানে যেই অবজেক্ট এর price আছে ৫০০০ টেক্কা সেই অবজেক্টকে find দিয়ে বের করো।
+
+{
+  const products = [
+    { name: "Honey", weight: "500gm", price: 400 },
+    { name: "Headphone", weight: "250gm", price: 5000 },
+    { name: "Table Lamp", weight: "300gm", price: 1000 },
+  ];
+  const expensive = products.find((product) => product.price === 5000);
+  console.log(expensive);
+}
