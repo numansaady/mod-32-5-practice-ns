@@ -142,3 +142,11 @@ console.log(mp);
   const fiveTimes = numbers.map((number) => number * 5);
   console.log(fiveTimes);
 }
+
+// ৬. [ চ্যালেঞ্জিং। গুগলে সার্চ দিয়ে বের করো ] অনেকগুলা সংখ্যার একটা array থেকে শুধু বিজোড় সংখ্যা বের করে নিয়ে আসার জন্য filter ইউজ করো
+
+{
+  const numbers = [3, 2, 4, 5, 8, 6, 7, 9, 11, 13, 43, 32, 33, 23];
+  const oddNumbers = numbers.filter((number) => number % 2 === 1);
+  console.log(oddNumbers);
+}
