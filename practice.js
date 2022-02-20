@@ -134,3 +134,11 @@ console.log(mp);
 // var: Allowed
 // let: Not allowed
 // const: Not allowed
+
+// ==================================================================
+// ৫. অনেকগুলা সংখ্যার একটা array হবে। তারপর তোমার কাজ হবে array এর উপরে map ইউজ করে। প্রত্যেকটা উপাদানকে ৫ দিয়ে গুন্ করে গুনফল আরেকটা array হিসেবে রাখবে। পুরা কাজটা এক লাইনে হবে।
+{
+  const numbers = [3, 4, 7, 8, 9, 6];
+  const fiveTimes = numbers.map((number) => number * 5);
+  console.log(fiveTimes);
+}
