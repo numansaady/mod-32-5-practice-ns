@@ -195,6 +195,121 @@ console.log(mp);
 {
   const friends = ["abul", "babul", "sabul", "maruf", "sufian"];
   const [one, two, three] = [...friends]; //get only elements not array with spread
-  const [one, two, three] = ["abul", "babul", "sabul", "maruf", "sufian"];
+  //   const [one, two, three] = ["abul", "babul", "sabul", "maruf", "sufian"];
   console.log(three);
+}
+
+// =======================================================
+// ১০. তিনটা প্যারামিটার ওয়ালা একটা ফাংশন লিখবে। যেই ফাংশনের কাজ হবে তিনটা প্যারামিটার নিয়ে সেই তিনটা প্যারামিটার এর যোগ করে যোগফল রিটার্ন করবে। আর থার্ড প্যারামিটার এর একটা ডিফল্ট ভ্যালু থাকবে। সেটা হবে ৭।
+{
+  function sum(num1, num2, num3 = 7) {
+    return num1 + num2 + num3;
+  }
+  const adding = sum(2, 3);
+  console.log(adding);
+}
+
+// ==============================================================
+// [অপশনাল]
+
+// ১১. একটা nested অবজেক্ট ডিক্লেয়ার করো (অর্থাৎ একটা অবজেক্ট এর প্রপার্টি এর মধ্যেও যে অবজেক্ট থাকতে পারে। আবার সেই অবজেক্ট এর প্রপার্টি এর মধ্যেও সে অবজেক্ট থাকতে পারে। সেই রকম একটা অবজেক্ট ডিক্লেয়ার করো। এবং যেকোন একটা প্রপার্টি এর মান একটা array হবে। জাস্ট এমন একটা অবজেক্ট )
+
+{
+  const madrasa = {
+    departments: {
+      computer: {
+        deptName: "Computer Department",
+        employee: 10,
+        computerQuantity: 20,
+      },
+      fatwa: { deptName: "Fatwa Department", employee: 5, desk: 20 },
+      tafsir: { deptName: "Tafsir Department", employee: 15, desk: 10 },
+    },
+    buildings: {
+      firstFloar: {
+        buildingName: "Abu Bakar Hall",
+        positon: "1st Floar",
+        roomQuantity: 45,
+      },
+      secondFloar: {
+        buildingName: "Umar Hall",
+        positon: "2nd Floar",
+        roomQuantity: 35,
+      },
+      thirdFloar: {
+        buildingName: "Usman Hall",
+        positon: "3rd Floar",
+        roomQuantity: 30,
+      },
+      fourthFloar: {
+        buildingName: "Ali Hall",
+        positon: "4th Floar",
+        roomQuantity: 25,
+      },
+    },
+    offices: {
+      principal: { officeName: "Ihtemam Bivag", director: "Mw. Muhiul Islam" },
+      academic: { officeName: "Talimat Bivag", director: "Mw. Golam Mostofa" },
+      hostel: { officeName: "Darul Aqama Bivag", director: "Mw. Azaz Ahmed" },
+    },
+    classes: {
+      takmil: {
+        className: "Takmil Fil Hadith",
+        studentAmount: 200,
+        session: 2022,
+      },
+      fazilat: { className: "Fazilat", studentAmount: 150, session: 2022 },
+      sanabiya: {
+        className: "Sanabiya",
+        studentAmount: 100,
+        session: 2022,
+      },
+      mutawassita: {
+        className: "Mutawassita",
+        studentAmount: 100,
+        session: 2022,
+      },
+    },
+    staff: {
+      teachers: {
+        teacher: [
+          {
+            id: 01,
+            teacherName: "Monjur Ahmed",
+            age: 35,
+            education: "Takmil Fil Hadith",
+            address: "Renga, Sylhet",
+          },
+          {
+            id: 02,
+            teacherName: "Numan Ahmed",
+            age: 35,
+            education: "Takmil Fil Hadith",
+            address: "Renga, Sylhet",
+          },
+          {
+            id: 03,
+            teacherName: "Sadik Ahmed",
+            age: 35,
+            education: "Takmil Fil Hadith",
+            address: "Renga, Sylhet",
+          },
+        ],
+        staffAmount: 50,
+      },
+      officers: { staffName: "Officer", staffAmount: 10 },
+      workers: { staffName: "Worker", staffAmount: 5 },
+    },
+  };
+
+  const { teacherName, age, education } = madrasa.staff.teachers.teacher[0];
+  console.log(
+    `${teacherName} is a ${education} passed teacher. He is a ${age} years old.`
+  );
+  // ১২. উপরের অবজেক্ট এ ডট এর আগে যে প্রশ্নবোxxধক চিহ্ন দিয়ে যে অপশনাল চেইনিং করা যায়। সেটা একটু প্রাকটিস করো।
+  const { deptName, employee, computerQuantity } =
+    madrasa?.departments?.computer;
+  console.log(
+    `${deptName} has ${employee} employee and ${computerQuantity} computer in the lab`
+  );
 }
